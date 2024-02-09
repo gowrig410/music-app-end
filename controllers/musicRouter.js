@@ -14,6 +14,11 @@ router.post("/add",async(req,res)=>{
 
 })
 
+router.get("/view",async(req,res)=>{
+    let data=await musicModel.find()
+    res.json(data)
+})
+
 
 
 
